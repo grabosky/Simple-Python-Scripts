@@ -20,4 +20,4 @@ webbrowser.open('http://www.address.com')
 #take a screenshot and save it
 call(["scrot"])
 
-#TODO: need to slow down taking the screenshot as the website needs to fully load first
+#to do: need to slow down taking the screenshot as the website needs to fully load first
