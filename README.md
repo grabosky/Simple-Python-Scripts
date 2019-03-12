@@ -1,5 +1,5 @@
 # Simple-Python-Scripts
-Collection package of simple Python scripts
+Collection package of simple, yet usefull Python scripts
 
 List:
 
