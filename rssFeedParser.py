@@ -1,3 +1,5 @@
+#Parses and prints titles and content of a RSS feed
+
 import feedparser
 
 d = feedparser.parse('http://www.somewebsiteaddress.com/rss')
