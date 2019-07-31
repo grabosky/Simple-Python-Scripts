@@ -22,3 +22,4 @@ call(["scrot"])
 
 #To Do: need to slow down taking the screenshot as the website needs to fully load first
 
+
