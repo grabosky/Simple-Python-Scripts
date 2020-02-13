@@ -9,4 +9,4 @@ wordParserAndCounter.py - Opens hamlet.txt and prints the most commonly used wor
 
 rssFeedParser.py - Parses and prints titles and content of a RSS feed
 
-functionExample.py - Simple example of function in Python
+functionExample.py - Simple example of a function in Python
