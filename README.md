@@ -8,3 +8,5 @@ saveHTMLtoXMLandScreenshot.py - Saves website's HTML into XML file and takes scr
 wordParserAndCounter.py - Opens hamlet.txt and prints the most commonly used words with number of times used
 
 rssFeedParser.py - Parses and prints titles and content of a RSS feed
+
+functionExample.py - Simple example of function in Python
