@@ -10,3 +10,5 @@ wordParserAndCounter.py - Opens hamlet.txt and prints the most commonly used wor
 rssFeedParser.py - Parses and prints titles and content of a RSS feed
 
 functionExample.py - Simple example of a function in Python
+
+pingListOfDomains.py - Goes through a list of URLs from "domains-test" file and pings them to see if the domains are up
