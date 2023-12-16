@@ -1,7 +1,7 @@
 #Adam Grabowski; ChatGPT-3
 #2023-12-16
 #Statistical analysis - Character frequency analysis of a sample data. Show plot in pyplot. 
-#Sample data was created by another script to print a long list of random characters a-b, A-B, special chars ie. !@#$%^&*, and a random number 0-9 every 6th char. 
+#Sample data is "Lorem ipsum" text
 
 from collections import Counter
 import matplotlib.pyplot as plt
@@ -27,7 +27,15 @@ def plot_frequency_analysis(characters, frequencies):
 
 if __name__ == '__main__':
     # The provided example string
-    example_string = "5d$Cg@4hFciG8@J!=j2**=^d9h@-dC6@&a&-5I^i@=6IIi=E9B#A^G7@e=-c4F#Ba@9fBCHE1&A!&I7eJ#IC1B+g@G4aag!H3Ed& $f7cCEfH5C##E!9-$!BF7gIafB8#-BI$6BGba!7CDEa+7&g@=a1J+GH*3#@@&f2+C#J$5C-=jG3G$*#h9d+J+*8FjFHe4aD&c&9g !#Bc2&A&fG5*j*ed7d+==H7Jid&d1ig#gD1DFa$-7CI#ef1B!Bff8!J&fg1GAB+$9&=a^D7IjBh+4jI&$G6^hEj$5!#HD&1!^*&i 6!A+!G7Ef*-a2BI#Ij8ij=Ig4!JA@G6GgGiI5E-eD#1c#@&J8cj#^*7$B=@d6@#=gF7Heejf6@&#-h6h$hbB3-DJG^1$-dbE9JdA EE7*!IA&3j-bf+8=H-$g4CBd+B8c$dd=4#DjH=3jdIFG7!Ggf=8Gd*^C4eDI$D9-g@*&2idc-h8IjdA@8d@JH&4EJa@*4@hd^a2B H&d+1E=dI$7cGCGe4$d-Hf1h=Ff@6D&C+A3@ig+i9hCd*i9$F@cj4j#gAG7H&B+d9&+@ja9F+Gah7dFIh^2+*D$!6BfIgc2+chb= 3&H-Ja6*=iiH7ggi+H7=J+cF6g-a#$6#+^gE6FCEe-4jb#aB4a^-GB7+hdc@2H*!+&5bEC*@7#cbfb9Edc^b9hjAGd9a-^Gj2D&G Ef7Dhf=#2H^fCI6a@Ged1@ia^g3bDAeE7!IJca4aDh^E3F$bE&6Hi$F^4&$iF+7=JFii6Af@-A1FDJbj6^djce5F#Gfa5fGiF-3d $Gai9=Eg+h2AfbgH5$+hbe6BHhhB2JJGDc5a=HIb1=b$$*7h@!aC5*=fGd9Jaa#1Db=@d2eGeDg9c!!&!6#&abF8JFee$5-bAFd 2-FGg@2!!^ag5i&gcc8I$&JI6*b=^c6ic&Db7AhI-G1^Ha#f3^$=@G5ecEDH1f$egA6fAC#E4jfifa9*I-Dj5d#Bbc3aEgHf3gIh cf1gg-DH5cF+!j6DFBFf8J=HBj4I^Ig@9d#H@J2jDCI&3eDC#i4Bh!@j4HI#Fe9G##*#4@CDba9Bjgc$9GAh!c9eJC*!2hfj$#5f *$fF1G=H*C4$@cjg5!I+@e3!F@f&2EF+B+3Iah+d5!+!j^2*@I$a1HJiic1H!DdJ3+*-jD2+ChdD7a#B!=9@Ici-7#+Ddg8jBD#f 4$*jE@4&G&DJ5@DBc&9jhjae5DC*@&6+^b+A8fbCDH6H&D=+1F&dcb2DBG!*4#jb=@7=JfFc1*GaIG2&IJ-&2^GeHd4Eh&!@1ce#"
+    example_string = Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium tempor ultricies. In hac habitasse platea dictumst. Curabitur consequat felis nec nisi aliquam, et tincidunt ante luctus. Cras a suscipit mi. Nam ac aliquam velit. Duis vitae nulla venenatis, fermentum neque a, porta mauris. Aenean nec ligula non elit dictum tristique.
+
+Nullam fermentum efficitur cursus. Fusce egestas mi non nulla semper porttitor. Duis blandit feugiat lacus bibendum sodales. Curabitur ut lorem scelerisque, pellentesque lectus eget, varius magna. Nulla tempor augue in imperdiet maximus. Sed posuere, tortor ac dignissim commodo, ipsum tellus volutpat lorem, et sagittis neque mauris ac risus. Vivamus ultricies imperdiet orci. Mauris quam nisl, ultrices nec fermentum quis, auctor ut elit.
+
+Nullam eget congue magna. Donec hendrerit venenatis sapien a sagittis. Nullam consectetur purus leo, et pulvinar orci porttitor at. Vestibulum molestie id ipsum pulvinar ornare. Donec gravida congue diam elementum fringilla. Maecenas ac molestie lectus. Sed congue vel ante ut vulputate. Suspendisse sagittis nulla eu lectus efficitur viverra. Mauris metus dui, sollicitudin non pretium quis, varius eu lorem. Maecenas a bibendum lectus, sollicitudin dictum elit. Nulla eget consequat justo. Cras tristique suscipit quam, id gravida magna tempor nec. Proin magna dui, vulputate at commodo in, sodales nec massa. Aliquam congue, magna ac accumsan elementum, ligula augue tristique erat, ut accumsan lectus metus non libero.
+
+Maecenas tristique risus imperdiet dolor commodo iaculis. Mauris tortor odio, tempus at gravida sit amet, dapibus sed risus. Aliquam egestas in felis vel pulvinar. In hac habitasse platea dictumst. Duis maximus ultrices venenatis. Ut rutrum ornare nisi ac lobortis. Nam congue, nunc eget egestas volutpat, eros nulla sollicitudin metus, non sollicitudin tortor risus accumsan mi. Curabitur viverra, purus vel volutpat pharetra, leo ante venenatis risus, ac malesuada est erat eu sapien. Vivamus convallis, felis fringilla imperdiet ultricies, odio tellus ultrices nisi, sed pretium nunc mauris non dolor. Duis in facilisis erat, et vulputate leo. Duis pharetra dapibus magna. Cras sollicitudin dolor id dignissim venenatis. Etiam ultricies volutpat nisl nec tempus. Sed eleifend vestibulum lacinia. Phasellus sagittis mauris et velit interdum, et maximus lacus mollis. Aliquam eu tellus egestas odio tincidunt sodales at sit amet ligula.
+
+Cras est nulla, mollis eget felis vel, condimentum dapibus arcu. Curabitur nunc augue, congue ut libero at, luctus feugiat purus. Sed dui tortor, tincidunt pellentesque felis vitae, placerat placerat turpis. Vestibulum suscipit euismod dui commodo pharetra. Nunc eget nunc id magna dapibus varius. Vestibulum vulputate sem ac lacinia volutpat. In tellus nisi, hendrerit nec magna id, hendrerit pellentesque ipsum. Nam commodo, felis tristique malesuada porttitor, metus felis ornare dui, ut ullamcorper libero nisl eu arcu. Curabitur sed eros elementum lorem faucibus dapibus et ac augue. Phasellus vitae facilisis dui. Sed elementum sed nulla in gravida. In hac habitasse platea dictumst. Etiam dictum tortor non facilisis lacinia."
 
     characters, frequencies = frequency_analysis(example_string)
 
