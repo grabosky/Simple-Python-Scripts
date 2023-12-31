@@ -2,7 +2,7 @@ import tkinter as tk
 #from tkinter import ttk
 import ttkbootstrap as ttk
 
-#################### WINDOW START #####################
+#################### WINDOW SETTINGS START #####################
 window = tk.Tk()
 window.title('NewSoftwareProject')
 #window.iconbitmap("python.ico")
@@ -34,8 +34,61 @@ window.attributes('-alpha', 1)   #Screen Opacity from 0 to 1
 
 #Window Key Events
 window.bind('<Escape>', lambda event: window.quit()) #Exit window when pushed ESC
-#################### WINDOW END #####################
+#################### WINDOW SETTINGS END #####################
 
+
+#################### WINDOW LAYOUT START #####################
+
+#Examples: 
+
+#Draw label1 widget for testing
+#label1 = ttk.Label(window, text + 'Label 1', background = 'blue') 
+
+#3 Forms in Layouting: Pack, Grid, Place:
+
+#Pack Example ----- (ie. stack from top to bottom)
+#label1.pack(side = 'left', expand = True, fill = 'y')    #fill might be "both"
+
+#Grid Example ----- (ie. create invisible grid)
+#window.columnconfigure(0, weight = 1)
+#window.columnconfigure(1, weight = 1)
+#window.columnconfigure(2, weight = 2)
+#window.rowconfigure(0, weight = 1)
+#window.rowconfigure(1, weight = 1)
+
+#label1.grid(row = 0, column = 1, sticky = 'nsew')
+
+#Place Example ----- (ie. specific pixels x,y)
+#label1.place(x = 100, y = 100, width = 200, height = 100)
+#label1.place(relx = 0.5, rely = 0.5)  #Can be also relwidth =1, anchor = 'center', 'se' etc. 
+
+
+### Actual Layout: ###
+#Grid: (Define two spaces/columns, the left one must be 1/7th the size of the right one)
+window.columnconfigure(0, weight = 1)
+window.columnconfigure(1, weight = 7)
+#window.rowconfigure(0, weight = 1)
+
+## Left Menu
+#Create Widgets
+button001 = ttk.Button(window, text = 'ButtonTest')
+button002 = ttk.Button(window, text = 'ButtonTest')
+button003 = ttk.Button(window, text = 'ButtonTest')
+button004 = ttk.Button(window, text = 'ButtonTest')
+button005 = ttk.Button(window, text = 'ButtonTest')
+button006 = ttk.Button(window, text = 'ButtonTest')
+#Draw Widgets in Grid
+button001.grid(row = 0, column = 0, sticky = 'nsew', padx = '20', pady ='20')  #relx = 0.5, rely = 0.5 
+button002.grid(row = 1, column = 0, sticky = 'nsew', padx = '20', pady ='20')
+button003.grid(row = 2, column = 0, sticky = 'nsew', padx = '20', pady ='20')
+button004.grid(row = 3, column = 0, sticky = 'nsew', padx = '20', pady ='20')
+button005.grid(row = 4, column = 0, sticky = 'nsew', padx = '20', pady ='20')
+button006.grid(row = 5, column = 0, sticky = 'nsew', padx = '20', pady ='20')
+
+## Right Menu
+
+
+#################### WINDOW LAYOUT END  #####################
 
 
 
