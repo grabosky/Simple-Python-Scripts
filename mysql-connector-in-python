@@ -1,0 +1,27 @@
+import mysql.connector
+
+# Connect to MySQL
+conn = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="password",
+    database="your_database"
+)
+cursor = conn.cursor()
+
+# List of tables and columns to modify
+alter_commands = [
+    "ALTER TABLE employees MODIFY COLUMN employee_id INT;",
+    "ALTER TABLE employees MODIFY COLUMN join_date DATE;",
+    "ALTER TABLE sales MODIFY COLUMN sale_amount DECIMAL(10,2);",
+    "ALTER TABLE products MODIFY COLUMN product_info JSON;"
+]
+
+# Execute each command
+for command in alter_commands:
+    cursor.execute(command)
+
+# Commit changes and close connection
+conn.commit()
+cursor.close()
+conn.close()
