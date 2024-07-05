@@ -17,3 +17,5 @@ frequencyAnalysisExample.py - Example of a String character frequency clustering
 
 guiBoilerplateInTkinter.py - Boilerplate GUI for Tkinter
 
+mysqlConnectorPython.py - An example of connecting to mysql database using python
+
